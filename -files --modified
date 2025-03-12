@@ -1,0 +1,15 @@
+warning: in the working copy of 'src/app/globals.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/layout.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/Main.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/Navigation.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/Project.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/Timeline.tsx', LF will be replaced by CRLF the next time Git touches it
+src/app/globals.css
+src/app/layout.tsx
+src/app/page.tsx
+src/components/Certification.tsx
+src/components/Main.tsx
+src/components/Navigation.tsx
+src/components/Project.tsx
+src/components/Timeline.tsx

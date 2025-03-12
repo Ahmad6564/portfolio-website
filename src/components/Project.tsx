@@ -23,17 +23,32 @@ const Project: React.FC = () => {
                 </div>
                 <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div className="p-6">
-                        <h3 className="text-xl font-semibold mb-2 text-blue-600">X-ray Image Classification</h3>
+                        <h3 className="text-xl font-semibold mb-2 text-blue-600">X-Rays Image Classification Using CNN and Image Processing Techniques</h3>
                         <p className="text-gray-700 dark:text-gray-300 mb-4">
-                            Deep learning model for classifying X-ray images using CNNs. Achieves high accuracy in identifying abnormalities in medical imaging data.
+                            Deep learning model for classifying X-ray images using CNNs and advanced image processing. Achieves high accuracy in identifying abnormalities in medical imaging data.
                         </p>
                         <div className="flex gap-2">
                             <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">Python</span>
                             <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">TensorFlow</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">CNN</span>
                             <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">Medical AI</span>
                         </div>
                         <div className="mt-4">
                             <a href="https://github.com/Ahmad6564/Histopathological-Images-Analysis" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div className="p-6">
+                        <h3 className="text-xl font-semibold mb-2 text-blue-600">Library Management System</h3>
+                        <p className="text-gray-700 dark:text-gray-300 mb-4">
+                            Comprehensive library management solution with SQL database backend and C++ frontend. Features book tracking, member management, borrowing system, and reporting.
+                        </p>
+                        <div className="flex gap-2">
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">C++</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">SQL</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">Database Design</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">DBMS</span>
                         </div>
                     </div>
                 </div>

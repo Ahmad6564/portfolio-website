@@ -16,23 +16,30 @@ import './globals.css';
 export default function Home() {
     const [mode, setMode] = useState<string>('dark');
 
-    const handleModeChange = () => {
-        if (mode === 'dark') {
-            setMode('light');
-            document.documentElement.classList.remove('dark');
-        } else {
+    // Initialize dark mode from localStorage if available
+    useEffect(() => {
+        const savedMode = localStorage.getItem('theme');
+        if (savedMode) {
+            setMode(savedMode);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             setMode('dark');
-            document.documentElement.classList.add('dark');
         }
+    }, []);
+
+    const handleModeChange = () => {
+        const newMode = mode === 'dark' ? 'light' : 'dark';
+        setMode(newMode);
+        localStorage.setItem('theme', newMode);
     }
 
-    // Initialize dark mode on component mount
+    // Apply dark mode class to document
     useEffect(() => {
-        // Set initial dark mode class
         if (mode === 'dark') {
             document.documentElement.classList.add('dark');
+            document.body.classList.add('dark:bg-gray-900', 'dark:text-white');
         } else {
             document.documentElement.classList.remove('dark');
+            document.body.classList.remove('dark:bg-gray-900', 'dark:text-white');
         }
         
         // Smooth scroll to top on initial load
@@ -49,23 +56,23 @@ export default function Home() {
                     <Main />
                 </section>
                 
-                <section id="expertise" className="py-20">
+                <section id="expertise" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-500">
                     <Expertise />
                 </section>
                 
-                <section id="certification" className="py-20 bg-blue-50 dark:bg-blue-900/20">
+                <section id="certification" className="py-20 bg-blue-50 dark:bg-blue-900/20 transition-colors duration-500">
                     <Certification />
                 </section>
                 
-                <section id="timeline" className="py-20 bg-gray-50 dark:bg-gray-800">
+                <section id="timeline" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-500">
                     <Timeline />
                 </section>
                 
-                <section id="projects" className="py-20 bg-blue-50 dark:bg-blue-900/20">
+                <section id="projects" className="py-20 bg-blue-50 dark:bg-blue-900/20 transition-colors duration-500">
                     <Project />
                 </section>
                 
-                <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
+                <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-500">
                     <Contact />
                 </section>
             </div>
