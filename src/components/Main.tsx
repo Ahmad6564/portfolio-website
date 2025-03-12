@@ -43,8 +43,9 @@ const Main: React.FC = () => {
                             Contact Me
                         </a>
                         <a
-                            href="/resume.txt"
-                            download
+                            href="https://docs.google.com/document/d/1X-Ut3vZhDUrJnM3OZFYm_xFPmd5geGgx/edit?usp=sharing&ouid=115684314747029939501&rtpof=true&sd=true"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 dark:text-white rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-600 transition-all duration-300 transform hover:translate-y-1 shadow-md hover:shadow-lg"
                         >
                             <svg className="w-5 h-5 mr-2 -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

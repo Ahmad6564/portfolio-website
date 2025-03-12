@@ -14,9 +14,9 @@ const Education: React.FC = () => {
                     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 hover-card">
                         <div className="flex flex-col md:flex-row justify-between mb-2">
                             <h3 className="text-xl font-semibold text-blue-600">Bachelor of Computer Engineering</h3>
-                            <span className="text-gray-500 dark:text-gray-400">2020 - 2024</span>
+                            <span className="text-gray-500 dark:text-gray-400">2021 - 2025</span>
                         </div>
-                        <p className="text-lg font-medium mb-2">National University of Sciences and Technology (NUST)</p>
+                        <p className="text-lg font-medium mb-2">Govt Islamic College Civil Lines, Lahore</p>
                         <p className="text-gray-600 dark:text-gray-300 mb-4">
                             Final Year Computer Engineering student with a focus on embedded systems, machine learning,
                             and artificial intelligence. Maintained a strong academic record while participating in 
