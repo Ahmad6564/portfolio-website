@@ -10,6 +10,7 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({ parentToChild, modeChange }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [activeSection, setActiveSection] = useState('main');
 
     // Handle scroll effect for navbar
     useEffect(() => {
@@ -18,6 +19,16 @@ const Navigation: React.FC<NavigationProps> = ({ parentToChild, modeChange }) =>
                 setScrolled(true);
             } else {
                 setScrolled(false);
+            }
+            
+            // Update active section based on scroll position
+            const sections = ['main', 'expertise', 'education', 'certification', 'timeline', 'projects', 'blog', 'contact'];
+            for (const section of sections.reverse()) {
+                const element = document.getElementById(section);
+                if (element && window.scrollY >= element.offsetTop - 200) {
+                    setActiveSection(section);
+                    break;
+                }
             }
         };
 
@@ -89,13 +100,54 @@ const Navigation: React.FC<NavigationProps> = ({ parentToChild, modeChange }) =>
                 >
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-200 rounded-lg bg-white/90 dark:bg-gray-800/90 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:md:bg-transparent dark:border-gray-700">
                         <li>
-                            <a href="#main" onClick={() => setIsMenuOpen(false)} className="block py-2 pl-3 pr-4 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-600 md:dark:hover:text-blue-500 md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">Home</a>
+                            <a 
+                                href="#main" 
+                                onClick={() => setIsMenuOpen(false)} 
+                                className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 ${
+                                    activeSection === 'main' 
+                                        ? 'text-blue-600 dark:text-blue-400 font-semibold'
+                                        : 'text-gray-900 dark:text-white'
+                                }`}
+                            >
+                                Home
+                            </a>
                         </li>
                         <li>
-                            <a href="#expertise" onClick={() => setIsMenuOpen(false)} className="block py-2 pl-3 pr-4 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-600 md:dark:hover:text-blue-500 md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">Expertise</a>
+                            <a 
+                                href="#expertise" 
+                                onClick={() => setIsMenuOpen(false)} 
+                                className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 ${
+                                    activeSection === 'expertise' 
+                                        ? 'text-blue-600 dark:text-blue-400 font-semibold'
+                                        : 'text-gray-900 dark:text-white'
+                                }`}
+                            >
+                                Expertise
+                            </a>
                         </li>
                         <li>
-                            <a href="#certification" onClick={() => setIsMenuOpen(false)} className="block py-2 pl-3 pr-4 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-600 md:dark:hover:text-blue-500 md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">
+                            <a 
+                                href="#education" 
+                                onClick={() => setIsMenuOpen(false)} 
+                                className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 ${
+                                    activeSection === 'education' 
+                                        ? 'text-blue-600 dark:text-blue-400 font-semibold'
+                                        : 'text-gray-900 dark:text-white'
+                                }`}
+                            >
+                                Education
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="#certification" 
+                                onClick={() => setIsMenuOpen(false)} 
+                                className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 ${
+                                    activeSection === 'certification' 
+                                        ? 'text-blue-600 dark:text-blue-400 font-semibold'
+                                        : 'text-gray-900 dark:text-white'
+                                }`}
+                            >
                                 <span className="relative">
                                     Certifications
                                     <span className="absolute -top-1 -right-2 flex h-2 w-2">
@@ -106,13 +158,56 @@ const Navigation: React.FC<NavigationProps> = ({ parentToChild, modeChange }) =>
                             </a>
                         </li>
                         <li>
-                            <a href="#timeline" onClick={() => setIsMenuOpen(false)} className="block py-2 pl-3 pr-4 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-600 md:dark:hover:text-blue-500 md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">Timeline</a>
+                            <a 
+                                href="#timeline" 
+                                onClick={() => setIsMenuOpen(false)} 
+                                className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 ${
+                                    activeSection === 'timeline' 
+                                        ? 'text-blue-600 dark:text-blue-400 font-semibold'
+                                        : 'text-gray-900 dark:text-white'
+                                }`}
+                            >
+                                Timeline
+                            </a>
                         </li>
                         <li>
-                            <a href="#projects" onClick={() => setIsMenuOpen(false)} className="block py-2 pl-3 pr-4 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-600 md:dark:hover:text-blue-500 md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">Projects</a>
+                            <a 
+                                href="#projects" 
+                                onClick={() => setIsMenuOpen(false)} 
+                                className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 ${
+                                    activeSection === 'projects' 
+                                        ? 'text-blue-600 dark:text-blue-400 font-semibold'
+                                        : 'text-gray-900 dark:text-white'
+                                }`}
+                            >
+                                Projects
+                            </a>
                         </li>
                         <li>
-                            <a href="#contact" onClick={() => setIsMenuOpen(false)} className="block py-2 pl-3 pr-4 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-600 md:dark:hover:text-blue-500 md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">Contact</a>
+                            <a 
+                                href="#blog" 
+                                onClick={() => setIsMenuOpen(false)} 
+                                className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 ${
+                                    activeSection === 'blog' 
+                                        ? 'text-blue-600 dark:text-blue-400 font-semibold'
+                                        : 'text-gray-900 dark:text-white'
+                                }`}
+                            >
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="#contact" 
+                                onClick={() => setIsMenuOpen(false)} 
+                                className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:p-0 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 ${
+                                    activeSection === 'contact' 
+                                        ? 'text-blue-600 dark:text-blue-400 font-semibold'
+                                        : 'text-gray-900 dark:text-white'
+                                }`}
+                            >
+                                Contact
+                            </a>
                         </li>
                     </ul>
                 </div>

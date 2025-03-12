@@ -10,6 +10,8 @@ import {
   Navigation,
   Footer,
   Certification,
+  Education,
+  BlogPreview,
 } from "@/components";
 import './globals.css';
 
@@ -60,6 +62,10 @@ export default function Home() {
                     <Expertise />
                 </section>
                 
+                <section id="education" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-500">
+                    <Education />
+                </section>
+                
                 <section id="certification" className="py-20 bg-blue-50 dark:bg-blue-900/20 transition-colors duration-500">
                     <Certification />
                 </section>
@@ -72,7 +78,11 @@ export default function Home() {
                     <Project />
                 </section>
                 
-                <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-500">
+                <section id="blog" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-500">
+                    <BlogPreview />
+                </section>
+                
+                <section id="contact" className="py-20 bg-blue-50 dark:bg-blue-900/20 transition-colors duration-500">
                     <Contact />
                 </section>
             </div>
