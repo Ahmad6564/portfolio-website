@@ -5,10 +5,9 @@ interface ProjectCardProps {
     description: string;
     tags: string[];
     github?: string;
-    image?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tags, github, image }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tags, github }) => {
     return (
         <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-md hover-card hover:border-blue-300 dark:hover:border-blue-700 bg-white dark:bg-gray-800 transition-all duration-300">
             <div className="p-6">
@@ -118,7 +117,6 @@ const Project: React.FC = () => {
                         description={project.description}
                         tags={project.tags}
                         github={project.github}
-                        image={project.image}
                     />
                 ))}
             </div>
