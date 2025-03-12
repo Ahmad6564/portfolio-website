@@ -43,8 +43,13 @@ const Project: React.FC = () => {
     
     const projects: ProjectCardProps[] = [
         {
+            title: "FPGA-Based Fast Matrix Multiplication",
+            description: "Built a high-speed matrix multiplication system on an FPGA using optimized Verilog algorithms. Implemented UART communication for PC-FPGA data transfer and created a parallelized design for maximum efficiency on the Nexus 3 Spartan-6 FPGA.",
+            tags: ["Verilog", "FPGA", "UART", "Hardware Design", "Parallel Computing"],
+        },
+        {
             title: "A Conditional GAN-Based Approach for Noisy Medical Image Reconstruction",
-            description: "Developed a deep learning pipeline using a Pix2Pix cGAN to denoise MRI scans from the BraTS 2020 dataset. The model, built with a U-Net generator and PatchGAN discriminator, reconstructs clean images from noisy inputs using adversarial and pixel-wise loss functions. Achieved significant improvements in image clarity, evaluated via PSNR, LPIPS, and SSIM.",
+            description: "Developed a deep learning pipeline using a Pix2Pix cGAN to denoise MRI scans from the BraTS 2020 dataset. The model, built with a U-Net generator and PatchGAN discriminator, reconstructs clean images from noisy inputs using adversarial and pixel-wise loss functions. Achieved significant improvements in image clarity, evaluated via PSNR, LPIPS, and SSIM, enhancing MRI analysis for better diagnosis and tumor segmentation.",
             tags: ["Python", "PyTorch", "GANs", "U-Net", "Medical Imaging", "Computer Vision"],
         },
         {
