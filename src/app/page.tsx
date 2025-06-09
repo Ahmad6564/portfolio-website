@@ -61,7 +61,7 @@ export default function Home() {
                 <section id="expertise" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-500">
                     <Expertise />
                 </section>
-                
+
                 <section id="education" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-500">
                     <Education />
                 </section>
@@ -85,7 +85,7 @@ export default function Home() {
                 <section id="contact" className="py-20 bg-blue-50 dark:bg-blue-900/20 transition-colors duration-500">
                     <Contact />
                 </section>
-            </div>
+        </div>
             
             <Footer />
     </div>
