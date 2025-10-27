@@ -46,7 +46,7 @@ const BlogPreview: React.FC = () => {
 
     return (
         <section className="max-w-screen-xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-4">From My Blog</h2>
+            <h2 className="text-3xl font-bold text-center mb-4 text-gray-800 dark:text-gray-200">From My Blog</h2>
             <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
                 I write about machine learning, deep learning, and artificial intelligence on Medium.
             </p>
@@ -62,10 +62,10 @@ const BlogPreview: React.FC = () => {
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
                     >
-                        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 h-full transform transition-all duration-300 hover-card hover:border-blue-300 dark:hover:border-blue-700">
+                        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-300 dark:border-gray-600 h-full transform transition-all duration-300 hover-card hover:border-gray-400 dark:hover:border-gray-500">
                             <div className="p-6">
                                 <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">{post.date}</div>
-                                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200 group-hover:text-gray-700 dark:group-hover:text-gray-100 transition-colors">
                                     {post.title}
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -81,7 +81,7 @@ const BlogPreview: React.FC = () => {
                                         </span>
                                     ))}
                                 </div>
-                                <div className="flex items-center text-blue-600 group-hover:text-blue-700 dark:text-blue-400 dark:group-hover:text-blue-300 font-medium">
+                                <div className="flex items-center text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100 font-medium">
                                     Read article
                                     <svg 
                                         className={`w-5 h-5 ml-1 transition-transform duration-300 ${hoveredIndex === index ? 'translate-x-1' : ''}`} 
@@ -103,7 +103,7 @@ const BlogPreview: React.FC = () => {
                     href="https://medium.com/@ahmadkhalid6564" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors transform hover:scale-105 duration-300"
+                    className="inline-block px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors transform hover:scale-105 duration-300"
                 >
                     View All Articles
                 </a>

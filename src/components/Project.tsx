@@ -9,18 +9,18 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tags, github }) => {
     return (
-        <div className="border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:scale-[1.025] hover:border-blue-400 dark:hover:border-blue-600 bg-white dark:bg-gray-900 transition-all duration-300 group">
+        <div className="border border-gray-300 dark:border-gray-600 rounded-2xl overflow-hidden shadow-md hover:shadow-lg hover:scale-[1.02] hover:border-gray-400 dark:hover:border-gray-500 bg-white dark:bg-gray-800 transition-all duration-300 group">
             <div className="p-7 flex flex-col h-full">
-                <h3 className="text-2xl font-bold mb-3 text-blue-700 dark:text-blue-300 group-hover:text-blue-500 transition-colors">{title}</h3>
+                <h3 className="text-2xl font-bold mb-3 text-gray-800 dark:text-gray-200 group-hover:text-gray-700 dark:group-hover:text-gray-100 transition-colors">{title}</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-5 flex-1">{description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                     {tags.map((tag, index) => (
-                        <span key={index} className="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-200 rounded-full text-xs font-semibold shadow-sm hover:scale-110 transition-transform">{tag}</span>
+                        <span key={index} className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs font-semibold shadow-sm hover:scale-110 transition-transform">{tag}</span>
                     ))}
                 </div>
                 {github && (
                     <div className="mt-auto">
-                        <a href={github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline font-medium group">
+                        <a href={github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 hover:underline font-medium group">
                             View on GitHub
                             <svg className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -125,7 +125,7 @@ const Project: React.FC = () => {
 
     return (
         <div className="max-w-screen-xl mx-auto px-4">
-            <h2 className="text-4xl font-extrabold text-center mb-4 text-blue-700 dark:text-blue-300 tracking-tight drop-shadow-lg">Featured Projects</h2>
+            <h2 className="text-4xl font-extrabold text-center mb-4 text-gray-800 dark:text-gray-200 tracking-tight drop-shadow-lg">Featured Projects</h2>
             <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto text-lg">A showcase of my technical work, ranging from machine learning applications to software development projects.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
                 {currentProjects.map((project, idx) => (
@@ -142,10 +142,10 @@ const Project: React.FC = () => {
             <div className="flex justify-center items-center gap-4 mt-8">
                 <button 
                     onClick={prevPage}
-                    className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors shadow-md"
+                    className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors shadow-md"
                     aria-label="Previous page"
                 >
-                    <svg className="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-6 h-6 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
                     </svg>
                 </button>
@@ -157,8 +157,8 @@ const Project: React.FC = () => {
                             onClick={() => setCurrentPage(idx)}
                             className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                                 idx === currentPage 
-                                    ? 'bg-blue-600 w-5' 
-                                    : 'bg-gray-300 dark:bg-gray-600 hover:bg-blue-400 dark:hover:bg-blue-700'
+                                    ? 'bg-gray-600 dark:bg-gray-400 w-5' 
+                                    : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
                             }`}
                             aria-label={`Go to page ${idx + 1}`}
                         />
@@ -166,10 +166,10 @@ const Project: React.FC = () => {
                 </div>
                 <button 
                     onClick={nextPage}
-                    className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors shadow-md"
+                    className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors shadow-md"
                     aria-label="Next page"
                 >
-                    <svg className="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-6 h-6 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                 </button>

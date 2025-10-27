@@ -25,8 +25,8 @@ const Main: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-between gap-10">
                 {/* Left side - Introduction */}
                 <div id="left-content" className="md:w-1/2 text-left opacity-0 transition-all duration-1000 transform translate-x-[-20px]">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-blue-600 dark:text-blue-400">
-                        Hi, I&apos;m <span className="relative text-gray-900 dark:text-white after:content-[''] after:absolute after:bottom-1 after:left-0 after:h-1 after:rounded after:w-full after:bg-blue-500/20 after:transition-all after:duration-300 hover:after:h-[40%] hover:after:bg-blue-500/30">Muhammad Ahmad</span>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
+                        Hi, I&apos;m <span className="relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:h-1 after:rounded after:w-full after:bg-blue-500/20 after:transition-all after:duration-300 hover:after:h-[40%] hover:after:bg-blue-500/30">Muhammad Ahmad</span>
                     </h1>
                     <h2 className="text-xl md:text-2xl font-medium mb-4 text-gray-700 dark:text-gray-300">
                         Computer Engineering Student & ML Engineer
@@ -43,7 +43,7 @@ const Main: React.FC = () => {
                             Contact Me
                         </a>
                         <a
-                           
+                            href="https://drive.google.com/file/d/1j2git2hwS3SboihGkG2at9E1B2W2mSw4/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 dark:text-white rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-600 transition-all duration-300 transform hover:translate-y-1 shadow-md hover:shadow-lg"
@@ -64,26 +64,26 @@ const Main: React.FC = () => {
                             Motivated and technically proficient Computer Engineering professional with a strong foundation in software development, machine learning, deep learning, Transformers Architectures, LSTM, RNN and computer vision. Skilled in working with embedded systems such as Raspberry Pi, UART, and the Nexus 3 Spartan-6 FPGA. Proficient in Python, C++, React.js, FastAPI, and MATLAB. Experienced in real-time object tracking, FPGA-based computing, generative adversarial networks (GANs), and database management using MySQL and MongoDB. Passionate about leveraging engineering principles to develop innovative and impactful solutions.
                         </p>
                         <div className="mt-6 flex flex-wrap gap-2">
-                            <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-sm transform transition-transform hover:scale-110">Machine Learning</span>
-                            <span className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 rounded-full text-sm transform transition-transform hover:scale-110">Artificial Intelligence</span>
-                            <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-300 rounded-full text-sm transform transition-transform hover:scale-110">Deep Learning</span>
-                            <span className="px-3 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-800 dark:text-pink-300 rounded-full text-sm transform transition-transform hover:scale-110">CNN</span>
-                            <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full text-sm transform transition-transform hover:scale-110">FPGA</span>
-                            <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-sm transform transition-transform hover:scale-110">Python</span>
-                            <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300 rounded-full text-sm transform transition-transform hover:scale-110">C++</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full text-sm transform transition-transform hover:scale-110">Assembly</span>
-                            <span className="px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 rounded-full text-sm transform transition-transform hover:scale-110">React</span>
-                            <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-300 rounded-full text-sm transform transition-transform hover:scale-110">FastAPI</span>
-                            <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 rounded-full text-sm transform transition-transform hover:scale-110">Verilog</span>
-                            <span className="px-3 py-1 bg-fuchsia-100 dark:bg-fuchsia-900/30 text-fuchsia-800 dark:text-fuchsia-300 rounded-full text-sm transform transition-transform hover:scale-110">Generative Adversarial Networks (GANs)</span>
-                            <span className="px-3 py-1 bg-lime-100 dark:bg-lime-900/30 text-lime-800 dark:text-lime-300 rounded-full text-sm transform transition-transform hover:scale-110">Transformers Architecture</span>
-                            <span className="px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300 rounded-full text-sm transform transition-transform hover:scale-110">Encoders-Decoders</span>
-                            <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-800 dark:text-violet-300 rounded-full text-sm transform transition-transform hover:scale-110">LSTM</span>
-                            <span className="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-800 dark:text-rose-300 rounded-full text-sm transform transition-transform hover:scale-110">RNN</span>
-                            <span className="px-3 py-1 bg-sky-100 dark:bg-sky-900/30 text-sky-800 dark:text-sky-300 rounded-full text-sm transform transition-transform hover:scale-110">GRU RNNs</span>
-                            <span className="px-3 py-1 bg-yellow-200 dark:bg-yellow-900/30 text-yellow-900 dark:text-yellow-200 rounded-full text-sm transform transition-transform hover:scale-110">YOLO + Deep Sort</span>
-                            <span className="px-3 py-1 bg-blue-200 dark:bg-blue-900/30 text-blue-900 dark:text-blue-200 rounded-full text-sm transform transition-transform hover:scale-110">Computer Vision</span>
-                            <span className="px-3 py-1 bg-green-200 dark:bg-green-900/30 text-green-900 dark:text-green-200 rounded-full text-sm transform transition-transform hover:scale-110">Raspberry Pi</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Machine Learning</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Artificial Intelligence</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Deep Learning</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">CNN</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">FPGA</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Python</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">C++</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Assembly</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">React</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">FastAPI</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Verilog</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Generative Adversarial Networks (GANs)</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Transformers Architecture</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Encoders-Decoders</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">LSTM</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">RNN</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">GRU RNNs</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">YOLO + Deep Sort</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Computer Vision</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Raspberry Pi</span>
                         </div>
                     </div>
                 </div>
@@ -92,4 +92,4 @@ const Main: React.FC = () => {
     );
 };
 
-export default Main;
+export default Main; 
