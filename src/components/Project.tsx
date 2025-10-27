@@ -9,7 +9,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tags, github }) => {
     return (
-        <div className="border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:scale-[1.025] hover:border-blue-400 dark:hover:border-blue-600 bg-gradient-to-br from-white via-blue-50 to-blue-100 dark:from-gray-900 dark:via-gray-800 dark:to-blue-950 transition-all duration-300 group">
+        <div className="border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:scale-[1.025] hover:border-blue-400 dark:hover:border-blue-600 bg-white dark:bg-gray-900 transition-all duration-300 group">
             <div className="p-7 flex flex-col h-full">
                 <h3 className="text-2xl font-bold mb-3 text-blue-700 dark:text-blue-300 group-hover:text-blue-500 transition-colors">{title}</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-5 flex-1">{description}</p>
@@ -178,4 +178,4 @@ const Project: React.FC = () => {
     );
 };
 
-export default Project; 
+export default Project;

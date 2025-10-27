@@ -52,15 +52,16 @@ const Navigation: React.FC<NavigationProps> = ({ parentToChild, modeChange }) =>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
                 <a href="#" className="flex items-center space-x-3 group">
                     <span className="self-center text-2xl font-semibold whitespace-nowrap transition-all duration-300 dark:text-white tracking-tight relative">
-                        <span className="text-blue-600 group-hover:text-blue-500 transition-colors duration-300">A</span>hmad
-                        <span className="text-blue-600 group-hover:text-blue-500 transition-colors duration-300">K</span>halid
+                        <span className="text-blue-600 group-hover:text-blue-500 transition-colors duration-300">Mu</span>hammad
+                        <span className="text-blue-600 group-hover:text-blue-500 transition-colors duration-300"> A</span>hmad
+                        {/* <span className="text-blue-600 group-hover:text-blue-500 transition-colors duration-300">K</span>halid */}
                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-500"></span>
                     </span>
                 </a>
                 
                 {/* Theme Toggle Button - Always Visible */}
                 <div className="flex md:order-last">
-                    <button
+                    {/* <button
                         onClick={modeChange}
                         aria-label="Toggle Dark Mode"
                         className="p-2.5 rounded-full text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 transition-all duration-300 transform hover:scale-110"
@@ -74,7 +75,7 @@ const Navigation: React.FC<NavigationProps> = ({ parentToChild, modeChange }) =>
                                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                             </svg>
                         )}
-                    </button>
+                    </button> */}
                 </div>
                 
                 {/* Mobile Menu Button */}

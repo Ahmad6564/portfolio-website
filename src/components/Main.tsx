@@ -25,8 +25,8 @@ const Main: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-between gap-10">
                 {/* Left side - Introduction */}
                 <div id="left-content" className="md:w-1/2 text-left opacity-0 transition-all duration-1000 transform translate-x-[-20px]">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
-                        Hi, I&apos;m <span className="relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:h-1 after:rounded after:w-full after:bg-blue-500/20 after:transition-all after:duration-300 hover:after:h-[40%] hover:after:bg-blue-500/30">Muhammad Ahmad</span>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-blue-600 dark:text-blue-400">
+                        Hi, I&apos;m <span className="relative text-gray-900 dark:text-white after:content-[''] after:absolute after:bottom-1 after:left-0 after:h-1 after:rounded after:w-full after:bg-blue-500/20 after:transition-all after:duration-300 hover:after:h-[40%] hover:after:bg-blue-500/30">Muhammad Ahmad</span>
                     </h1>
                     <h2 className="text-xl md:text-2xl font-medium mb-4 text-gray-700 dark:text-gray-300">
                         Computer Engineering Student & ML Engineer
@@ -43,7 +43,7 @@ const Main: React.FC = () => {
                             Contact Me
                         </a>
                         <a
-                            href="https://drive.google.com/file/d/1j2git2hwS3SboihGkG2at9E1B2W2mSw4/view?usp=sharing"
+                           
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 dark:text-white rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-600 transition-all duration-300 transform hover:translate-y-1 shadow-md hover:shadow-lg"
@@ -92,4 +92,4 @@ const Main: React.FC = () => {
     );
 };
 
-export default Main; 
+export default Main;
