@@ -7,7 +7,7 @@ interface NavigationProps {
     modeChange: () => void;
 }
 
-const Navigation: React.FC<NavigationProps> = ({ parentToChild, modeChange }) => {
+const Navigation: React.FC<NavigationProps> = ({ }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState('main');
