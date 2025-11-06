@@ -29,8 +29,11 @@ const Main: React.FC = () => {
                         Hi, I&apos;m <span className="relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:h-1 after:rounded after:w-full after:bg-blue-500/20 after:transition-all after:duration-300 hover:after:h-[40%] hover:after:bg-blue-500/30">Muhammad Ahmad</span>
                     </h1>
                     <h2 className="text-xl md:text-2xl font-medium mb-4 text-gray-700 dark:text-gray-300">
-                        Computer Engineering Student & ML Engineer
+                        Junior AI Engineer | Generative AI & LLM Specialist
                     </h2>
+                    <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                        Transforming AI research into production-ready solutions
+                    </p>
                     
                     <div className="mt-6 flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
                         <a
@@ -61,29 +64,29 @@ const Main: React.FC = () => {
                     <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-xl backdrop-blur-sm bg-opacity-80 dark:bg-opacity-80">
                         <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">About Me</h3>
                         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                            Motivated and technically proficient Computer Engineering professional with a strong foundation in software development, machine learning, deep learning, Transformers Architectures, LSTM, RNN and computer vision. Skilled in working with embedded systems such as Raspberry Pi, UART, and the Nexus 3 Spartan-6 FPGA. Proficient in Python, C++, React.js, FastAPI, and MATLAB. Experienced in real-time object tracking, FPGA-based computing, generative adversarial networks (GANs), and database management using MySQL and MongoDB. Passionate about leveraging engineering principles to develop innovative and impactful solutions.
+                            Computer Engineering professional specializing in Machine Learning, Generative AI, and NLP. As a Junior AI Engineer, I transform cutting-edge AI research into scalable, production-ready solutions that drive real business value. Expert in building and fine-tuning Large Language Models (GPT, BERT, LLaMA), developing intelligent chatbots with advanced prompt engineering, and designing Retrieval-Augmented Generation (RAG) pipelines. Certified in IBM Generative AI Engineering and proficient with PyTorch, TensorFlow, LangChain, and Hugging Face Transformers. My expertise spans end-to-end AI deployment across cloud platforms, FPGA-optimized computations, and transformer-based systems for computer vision and time series classification.
                         </p>
                         <div className="mt-6 flex flex-wrap gap-2">
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Machine Learning</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Artificial Intelligence</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Deep Learning</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">CNN</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">FPGA</span>
+                            <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium transform transition-transform hover:scale-110">Generative AI</span>
+                            <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium transform transition-transform hover:scale-110">Large Language Models</span>
+                            <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium transform transition-transform hover:scale-110">NLP</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">RAG Systems</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">LangChain</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Hugging Face</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">PyTorch</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">TensorFlow</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Transformers</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Prompt Engineering</span>
                             <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Python</span>
                             <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">C++</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Assembly</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">React</span>
                             <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">FastAPI</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Verilog</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Generative Adversarial Networks (GANs)</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Transformers Architecture</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Encoders-Decoders</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">LSTM</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">RNN</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">GRU RNNs</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">YOLO + Deep Sort</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Flask</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">React.js</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">MLOps</span>
                             <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Computer Vision</span>
-                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">Raspberry Pi</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">FPGA</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">MongoDB</span>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm transform transition-transform hover:scale-110">MySQL</span>
                         </div>
                     </div>
                 </div>
