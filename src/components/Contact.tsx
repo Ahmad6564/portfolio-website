@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
                         GitHub
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/ahmad-khalid-846830201/"
+                        href="https://www.linkedin.com/in/muhammad-ahmad-846830201/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-4 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex flex-col items-center hover:border-gray-400 dark:hover:border-gray-500"
